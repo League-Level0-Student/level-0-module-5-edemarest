@@ -72,9 +72,6 @@ public class ForLoopGauntlet {
 		for (int i = 0; i <= 15; i++) {
 			int year = 2003 + i;
 			System.out.println("In " + year + ", I was " + i + " years old.");
-			if (i == 1) {
-				System.out.println("In " + year + ", I was " + i + " year old.");
-			}
 		}
 		
 		
