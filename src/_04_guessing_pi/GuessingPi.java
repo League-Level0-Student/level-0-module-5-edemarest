@@ -23,7 +23,10 @@ public class GuessingPi {
 		for (int i = 0; i <length; i++) {
 			System.out.println(pi.charAt(i));
 		}
-		for (int i = 0; i < length; i++) {
+		String firstdigit = JOptionPane.showInputDialog("What is the first digit of pi?");
+		int firstnum = Integer.parseInt(firstdigit);
+		if (firstnum == 3) {
+		for (int i = 1; i < length; i++) {
 			String guess = JOptionPane.showInputDialog("What is the next digit of pi?");
 			int guessnum = Integer.parseInt(guess);
 			String actualstring = Character.toString(pi.charAt(i));;
@@ -37,6 +40,11 @@ public class GuessingPi {
 			}
 			
 		}
+		}
+		else {
+			JOptionPane.showMessageDialog(null, "Incorrect. Start over!");
+		}
+		
 				// 5. Ask the user for the NEXT digit of pi.
 		
 				// 6. Compare the user's input to the next digit of your pi variable 
