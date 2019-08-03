@@ -1,5 +1,7 @@
 package _07_skill_practice;
 
+import java.util.Random;
+
 import javax.swing.JOptionPane;
 
 public class skill_practice {
@@ -14,21 +16,22 @@ skill_practice skills = new skill_practice();
 }
 
 void skill1() {
-// Use pop-ups for the following.
-// Ask the user how many dimes they have
-String dimes = JOptionPane.showInputDialog("How many dimes do you have?");
-int dimesnum = Integer.parseInt(dimes);
-// Tell them how many cents they have (hint multiply by 10)
-JOptionPane.showMessageDialog(null, "You have " + dimesnum*10 + " cents");
+	//challenge 1 
+		/*
+	String dimes = JOptionPane.showInputDialog("How many dimes do you have?");
+	int dimesnum = Integer.parseInt(dimes);
+	JOptionPane.showMessageDialog(null, "You have " + dimesnum*10 + " cents");
+		*/
 
 
-
-// Ask the user how tall they are (inches)
-
-
-
-
-// If they are shorter than 36 inches, tell them to eat their Wheaties
+	//challenge 2
+		/*
+	String height = JOptionPane.showInputDialog("How tall are you in inches?");
+	int heightnum = Integer.parseInt(height);
+	if (heightnum < 36) {
+	JOptionPane.showMessageDialog(null, "Eat your wheaties!");
+	}
+	    */
 
 
 
@@ -37,7 +40,13 @@ JOptionPane.showMessageDialog(null, "You have " + dimesnum*10 + " cents");
 
 void skill2() { // Write a loop to print every third number between 1 and 30 to the console 
 
-
+	
+	//challenge 3
+		/*
+	for (int i = 1; i < 11; i++) {
+		System.out.println(i*3);
+	}
+		*/
 
 
 
@@ -45,52 +54,67 @@ void skill2() { // Write a loop to print every third number between 1 and 30 to 
 
 }
 
-void skill3() { // Get a random number that is less than 20 and print it to the console 
+void skill3() { 
+
+	//challenge 4
+		/*
+	Random rand = new Random();
+	int value = rand.nextInt(20);
+	System.out.println(value);
+	int valuet = rand.nextInt(10);
+	System.out.println(valuet);
+	int solution = value - valuet;
+	JOptionPane.showMessageDialog(null, "The difference between the two numbers is: " + solution);
+		*/
+
+}
+
+void skill4() { 
+
+	//challenge 5
+		/*
+String city = JOptionPane.showInputDialog("What city do you live in?");
+if (city.equals("San Diego")) {
+	JOptionPane.showMessageDialog(null,  "You live in America's Finest City!");
+}
+else {
+	JOptionPane.showMessageDialog(null, "Move to San Diego.");
+}
+		*/
 
 
-
-// Get another random number that is less than 10 and print it to the console 
-
-
-
-// Using a pop-up, tell the user the difference between the numbers // Hint: use subtraction 
-
+	//challenge 6
+		/*
+String cars = JOptionPane.showInputDialog("How many cars does your family have?");
+int carnum = Integer.parseInt(cars);
+if (carnum == 1) {
+	JOptionPane.showMessageDialog(null, "Your car is a red Acura SUV!");
+}
+if (carnum == 0) {
+	JOptionPane.showMessageDialog(null, "I bet you use public transportation!");
+}
+else {
+	int wheels = carnum * 4;
+	JOptionPane.showMessageDialog(null, "Between all of your cars, there are " + wheels + " wheels!");
+}
+		*/
 
 
 }
 
-void skill4() { // In a pop-up, ask the user for the city they live in 
+void skill5() { 
 
-
-
-// If they answered "San Diego", tell them they live in America's Finest City 
-
-
-
-// Otherwise, tell them to move to San Diego 
-
-
-
-// Create a variable - cars - and initialize it to the number of cars your family has. // If there are 0 cars, use a pop-up to display, "I bet you use public transportation." 
-
-
-
-// If there is 1 car, use a pop-up to display the make/model of the car 
-
-
-
-// If there is more than 1 car, use a pop-up to display how many wheels the // cars have between them. 
-
-
-
-}
-
-void skill5() { // In a pop-up, ask the user for the name of their school 
-
-
-
-// In another pop-up, tell the user, that their school is a fantastic school. // You must include the name of the school in the message. 
-
+	
+	//challenge 7
+		/*
+	String name = JOptionPane.showInputDialog("What is the name of your school?");
+	if (name.contentEquals("Torrey Pines")) {
+		JOptionPane.showMessageDialog(null, "Torrey Pines sucks!");
+	}
+	else {
+		JOptionPane.showMessageDialog(null, name + " is a fantastic school!");
+	}
+		*/
 
 
 }
